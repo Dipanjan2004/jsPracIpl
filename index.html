@@ -7,13 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main">
-        <h1>INDIAN PREMIER LEAGUE</h1>
-        <div id="box">
-            <h1>Choose An IPL Team</h1>
-        </div>
-        <button>Change Team</button>
-    </div>
+    <main id="main">
+        <section class="app-shell" aria-live="polite">
+            <p class="eyebrow">IPL Team Picker</p>
+            <h1>INDIAN PREMIER LEAGUE</h1>
+
+            <div id="box">
+                <div class="team-visual">
+                    <img id="team-logo" alt="" decoding="async">
+                    <span id="team-fallback">IPL</span>
+                </div>
+
+                <div class="team-copy">
+                    <p id="team-tag">Ready for the toss</p>
+                    <h2 id="team-name">Choose An IPL Team</h2>
+                    <p id="team-color">All teams ready</p>
+                </div>
+            </div>
+
+            <button id="change-team" type="button">Change Team</button>
+        </section>
+    </main>
 
 
     <script src="script.js"></script>
